@@ -1,0 +1,64 @@
+.order-card {
+  background: linear-gradient(145deg, #1e1e2f, #151522);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-card-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status-dot.online {
+  background: #4caf50;
+  box-shadow: 0 0 8px #4caf50;
+}
+
+.status-dot.offline {
+  background: #ff5252;
+  box-shadow: 0 0 8px #ff5252;
+}
+
+.order-count {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin: 15px 0 5px;
+  color: #7c8cff;
+}
+
+.order-subtitle {
+  font-size: 0.9rem;
+  color: #b0b0c3;
+}
+
+.order-warning {
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(255, 82, 82, 0.15);
+  border-left: 4px solid #ff5252;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #ffb3b3;
+}

@@ -1,0 +1,120 @@
+:root {
+  font-family: system-ui, sans-serif;
+  background: #181818;
+  color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* HEADER */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #ff9800;
+  padding-bottom: 12px;
+}
+
+.auth-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logged-in {
+  color: #4caf50;
+}
+
+.expiry {
+  color: #aaa;
+  font-size: 0.85em;
+  margin-left: 6px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: #ff9800;
+  color: #000;
+}
+
+.btn.secondary {
+  background: #333;
+  color: #fff;
+}
+
+.btn.danger {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ORDER PANEL */
+.order-panel {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.order-panel input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* CARDS */
+.card {
+  background: linear-gradient(145deg, #222, #151515);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+}
+
+/* NOTIFICATIONS */
+.notifications {
+  margin-top: 20px;
+}
+
+.notification-item {
+  padding: 6px 0;
+  border-bottom: 1px solid #333;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

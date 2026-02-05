@@ -1,0 +1,13 @@
+{
+  "name": "delivery-time",
+  "version": "1.0.0",
+  "description": "Estimates delivery time",
+  "main": "estimateDelivery.js",
+  "scripts": {
+    "start": "node estimateDelivery.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
