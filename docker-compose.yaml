@@ -4,7 +4,7 @@ services:
     environment:
       - POSTGRES_USER=user
       - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=logistics_db
+      - POSTGRES_DB=foodDelivery_db
     ports:
       - "5432:5432"
 
@@ -62,7 +62,7 @@ services:
   order-service:
     build: ./services/order-service
     environment:
-      - DATABASE_URL=postgres://user:password@postgres:5432/logistics_db
+      - DATABASE_URL=postgres://user:password@postgres:5432/foodDelivery_db
       - RABBIT_URL=amqp://rabbitmq
       - JWT_SECRET=supersecret
     depends_on:

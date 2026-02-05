@@ -1,6 +1,6 @@
 import { Sequelize, DataTypes } from 'sequelize';
 
-const dbUrl = process.env.DATABASE_URL || 'postgres://user:password@localhost:5432/logistics_db'
+const dbUrl = process.env.DATABASE_URL || 'postgres://user:password@localhost:5432/foodDelivery_db'
 
 const sequelize = new Sequelize(dbUrl, {
     host: 'postgres',
